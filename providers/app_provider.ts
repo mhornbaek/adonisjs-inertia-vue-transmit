@@ -10,7 +10,7 @@ export default class AppProvider {
   async start() {
     let counter = 0
 
-    // Broadcast message every minute
+    // Broadcast message every second
     setInterval(() => {
       counter++
       transmit.broadcast('global', `Hallo ${counter}`)
